@@ -1,0 +1,24 @@
+{
+  "name": "pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pw:test": "playwright test",
+    "pw:e2e": "pnpm pw:test",
+    "pw:e2e:ui": "pnpm pw:e2e --ui",
+    "pw:report": "pnpm exec playwright show-report",
+    "pw:e2e:debug": "pnpm pw:e2e --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
